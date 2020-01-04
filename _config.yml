@@ -10,7 +10,6 @@ disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-comments: false
 
 # Authors
 authors:
@@ -39,7 +38,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+  - jekyll-multiple-languages-plugin
+
+#Multiple Languages
+languages: ['pt','en']
+exclude_from_localizations: ["javascript", "images", "css"]
+language_default: 'pt'
+languageNames:
+  pt: Português
+  en: English
+
 # Archives
 jekyll-archives:
   enabled:
@@ -47,7 +55,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
@@ -59,11 +67,13 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax' 
     block:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "enabled"
+adsense: "disabled"
 adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 

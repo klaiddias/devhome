@@ -8,7 +8,7 @@ image: assets/images/11.jpg
 description: "My review of Inception movie. Acting, plot and something else in this short description."
 featured: true
 hidden: true
-rating: 4.5
+rating: 1
 ---
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
@@ -17,8 +17,7 @@ Review products, books, movies, restaurant and anything you like on your Jekyll 
 
 It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
 
-```html
----
+```html 
 layout: post
 title:  "Inception Movie"
 author: john
@@ -27,14 +26,22 @@ tags: [red, yellow]
 image: assets/images/11.jpg
 description: "My review of Inception movie. Actors, directing and more."
 rating: 4.5
----
 ```
 
-```js
----
-function home() {
-    return null;
-}
+```javascript 
+/**
+ * Does a thing
+ */
+function helloWorld(param1, param2) {
+  var something = 0;
 
----
+  // Do something
+  if (2.0 % 2 == something) {
+    console.log('Hello, world!');
+  } else {
+    return null;
+  }
+
+  // @TODO comment
+}
 ```

@@ -1,0 +1,16 @@
+
+{% for lang in site.languageNames %}
+    {% if lang[0] == site.language_default %}
+            {% if lang[0] == site.lang %}
+            <a href="#" class="nav-link" style="display: none;">{{ lang[1] }}</a>
+            {% else %}
+            <a href="{{site.url}}{{page.url}}" class="nav-link">{{ lang[1] }}</a>
+            {% endif %}
+        {% else %}
+            {% if lang[0] == site.lang %}
+            <a href="#" class="nav-link" style="display: none;">{{ lang[1] }}</a>
+            {% else %}
+            <a href="{{site.url}}/{{lang[0]}}{{page.url}}" class="nav-link">{{ lang[1] }}</a>
+            {% endif %}
+    {% endif %}
+{% endfor %}
