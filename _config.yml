@@ -1,20 +1,26 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
+name: "DevHome"
+title: "DevHome"
+description: "Ajudando outros desenvolvedores."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: ""   
+baseurl: 
 google_analytics: 'UA-3983441-4'
 disqus: 'https-devhome-com-br'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-timezone: America/Sao_Paulo
-
 
 # Authors
 authors:
+  klaid:
+    name: Klaid Dias
+    display_name: Klaid
+    gravatar: 5baac68c85a4547a48ca59b381b09506
+    email: klaiddias@gmail.com
+    web: https://devhome.com.br
+    twitter: https://twitter.com/klaiddias
+    description: "Desenvolvedor FullStack .Net, Mobile (Cordova, React), Oracle, PostgreSQL, MySQL, CMS (Wordpress, Drupal) - Entusiasta por novas tecnologias."
   sal:
     name: Sal
     display_name: Sal
@@ -40,17 +46,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-  - jekyll-multiple-languages-plugin
-  - tzinfo
-
-#Multiple Languages
-languages: ['pt','en']
-exclude_from_localizations: ["javascript", "images", "css"]
-language_default: 'pt'
-languageNames:
-  pt: Português
-  en: English
-
+    
 # Archives
 jekyll-archives:
   enabled:
@@ -58,7 +54,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-
+    
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
@@ -70,17 +66,15 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    default_lang: html
-    css_class   : 'syntax' 
     block:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+adsense: "enable"
+adsense-data-ad-client: "ca-pub-7808387889562649"
+adsense-data-ad-slot: "6318770812"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
+lazyimages: "enable"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

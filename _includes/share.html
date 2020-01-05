@@ -1,6 +1,6 @@
 <div class="share sticky-top sticky-top-offset">
     <p>
-        {%t global.share%}
+        Compartilhar
     </p>
     <ul>
         <li class="ml-1 mr-1">
@@ -25,16 +25,10 @@
     {% if page.comments != false %}
     <div class="sep">
     </div>
-    <script>
-        var disqus_config = function () {
-            this.language = "{{site.lang}}";
-        };
-    </script>  
     <ul>
         <li>
         <a class="small smoothscroll" href="#disqus_thread"></a>
         </li>
     </ul>
-  
     {% endif %}
 </div>

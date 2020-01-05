@@ -1,9 +1,9 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; {% t global.prev %}</a>
+    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Anterior</a>
   {% else %}
-    <span>&laquo; {% t global.prev %}</span>
+    <span>&laquo; Anterior</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -17,9 +17,9 @@
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% t global.next %} &raquo;</a>
+    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo &raquo;</a>
   {% else %}
-    <span>{% t global.next %} &raquo;</span>
+    <span>Próximo &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
