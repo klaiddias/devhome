@@ -12,7 +12,6 @@ title: Home
         <h2><span>Destaque</span></h2>
     </div>
     <div class="row">
-
     {% for post in site.posts %}
 
         {% if post.featured == true %}
@@ -22,11 +21,16 @@ title: Home
         {% endif %}
 
     {% endfor %}
-
     </div>
 </section>
 
 {% endif %}
+
+<!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+{% if site.adsense == "enabled" %}
+    {% include adsense-under-header.html %}
+{% endif %}
+<!-- End Adsense -->
 
 <!-- Posts Index
 ================================================== -->
