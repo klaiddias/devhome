@@ -1,0 +1,20 @@
+{
+  "name": "devhome",
+  "version": "1.0.0",
+  "description": "[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/) &nbsp; | &nbsp; [Buy me a coffee](https://www.wowthemes.net/donate/)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaiddias/devhome.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klaiddias/devhome/issues"
+  },
+  "homepage": "https://github.com/klaiddias/devhome#readme",
+  "devDependencies": {
+    "sharp": "^0.23.4"
+  }
+}
