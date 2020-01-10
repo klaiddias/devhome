@@ -4,22 +4,17 @@ const fs = require('fs');
 const path = require('path');
 
 const _PATH_SOURCE = path.normalize('./assets/images_orig/');
-const _PATH_DEST_THUMB = path.normalize('./assets/thumbnail/');
 const _PATH_DEST_POST = path.normalize('./assets/images/');
-
-
-const fileThumb = {w: 348, h: 232, pathDest: _PATH_DEST_THUMB}
-const filePost = {w: 802, h: 500,  pathDest: _PATH_DEST_POST}
-
 
 fs.readdir(_PATH_SOURCE, (err, files)=> {
     if (err) throw err;
-    let newFile;
+    let newName;
+    let oldName;
     files.forEach((fname) => {
-        let newName = path.join(filePost.pathDest, fname);
-        let oldName = path.join(_PATH_SOURCE, fname);
+        newName = path.join(_PATH_DEST_POST, fname);
+        oldName = path.join(_PATH_SOURCE, fname);
 
-        resize({w: 802, h: 500,  pathDest: _PATH_DEST_POST, newFileName: newName, oldFileName: oldName});
+        resize({w: 802, h: 500, newFileName: newName, oldFileName: oldName});
         // resize({w: 802, h: 500,  pathDest: _PATH_DEST_POST, newFileName: newName, oldFileName: oldName})
         //     .then((data) => {
         //         console.log(data);
@@ -65,17 +60,16 @@ const resizeFile = function (fileType) {
     return new Promise ((resolve, reject) => {
         //resolve(`${oldFile}\n${newFile}`);
         sharp(fileType.oldFileName)
-        .resize(fileType.w, fileType.h, {
-            fit: sharp.fit.inside,
-            withoutEnlargement: true
-          })
-        .toBuffer()
-        .then( data => {
-            fs.writeFileSync(fileType.newFileName, data);
-            resolve(`File resized sucess.[${fileType.newFileName}]`);
-        })
-        .catch( err => {
-            reject(`Error to resize the file [${fileType.oldFileName}] (${err})`);
+            .resize(fileType.w, fileType.h, {
+                fit: sharp.fit.fill
+                })
+            .toBuffer()
+            .then( data => {
+                fs.writeFileSync(fileType.newFileName, data);
+                resolve(`File resized sucess.[${fileType.newFileName}]`);
+            })
+            .catch( err => {
+                reject(`Error to resize the file [${fileType.oldFileName}] (${err})`);
      });
   
         

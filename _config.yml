@@ -7,9 +7,21 @@ favicon: 'assets/images/logo.png'
 baseurl: 
 google_analytics: 'UA-3983441-4'
 disqus: 'https-devhome-com-br'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+#mailchimp-list: 'https://devhome.us4.list-manage.com/subscribe/post?u=646e413277ea74a2986bcad72&amp;id=f8790e2262'
 include: ["_pages"]
 permalink: /:title/
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: pt_BR
+      logo: assets/images/avatar.png
+      twitter:
+        username: klaiddias
+        card: summary
+        
 
 # Authors
 authors:
@@ -21,24 +33,7 @@ authors:
     web: https://devhome.com.br
     twitter: https://twitter.com/klaiddias
     description: "Desenvolvedor FullStack .Net, Mobile (Cordova, React), Oracle, PostgreSQL, MySQL, CMS (Wordpress, Drupal) - Entusiasta por novas tecnologias."
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
-
+  
 # Plugins
 plugins:
   - jekyll-paginate
