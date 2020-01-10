@@ -13,7 +13,7 @@ permalink: /:title/
 
 
 defaults:
-  - scope:
+    scope:
       path: ""
     values:
       lang: pt_BR
