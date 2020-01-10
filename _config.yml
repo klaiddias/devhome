@@ -12,15 +12,15 @@ include: ["_pages"]
 permalink: /:title/
 
 
-defaults:
-    scope:
-      path: ""
-    values:
-      lang: pt_BR
-      logo: assets/images/avatar.png
-      twitter:
-        username: klaiddias
-        card: summary
+#defaults:
+#    scope:
+#      path: ""
+#    values:
+#      lang: pt_BR
+#      logo: assets/images/avatar.png
+#      twitter:
+#        username: klaiddias
+#        card: summary
         
 
 # Authors
