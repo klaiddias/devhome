@@ -1,7 +1,12 @@
+# exclude everything
 _site
 .DS_Store
 *.swp
 .sass-cache
 *~
+.vscode/
 node_modules/
-assets/images_orig/
+assets/images_orig/*
+
+# exception to the rule
+!assets/images_orig/.gitkeep
