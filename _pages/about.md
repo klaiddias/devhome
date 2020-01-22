@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: DevHome, conteúdo voltado para desenvolvedores
 permalink: /about
-comments: true
+comments: Falso
 ---
 <!-- 
 <div class="row justify-content-between">
