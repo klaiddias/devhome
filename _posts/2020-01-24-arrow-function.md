@@ -2,10 +2,10 @@
 layout: post
 title:  "Arrow functions - Tudo que você precisa saber"
 author: klaid
-featured: true
+featured: false
 hidden: false
 categories: [ JavaScript ]
-tags: [Arrow] 
+tags: [Arrow, ES6] 
 image: assets/images/ES6Arrow.png
 beforetoc: "Uma arrow function apresenta uma sintaxe mais curta, bem parecida com expressões lambda, muito comuns em linguagens como JavaScript, Python, Ruby, Java e C#..." 
 toc: true
