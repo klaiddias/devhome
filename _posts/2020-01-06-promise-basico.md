@@ -2,7 +2,7 @@
 layout: post
 title:  "Promise - Entenda-as e descubra seu poder"
 author: klaid
-featured: true
+featured: false
 hidden: false
 categories: [ JavaScript ]
 tags: [JavaScript, Promise] 
