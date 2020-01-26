@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalando Jekyll no Windows 10"
 author: klaid
-featured: true
+featured: false
 hidden: true
 categories: [ JavaScript ]
 tags: [TypeScript, ES6] 
