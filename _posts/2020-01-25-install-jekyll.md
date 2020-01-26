@@ -1,4 +1,17 @@
-Toc
+---
+layout: post
+title:  "Optional Chaining"
+author: klaid
+featured: true
+hidden: false
+categories: [ JavaScript ]
+tags: [TypeScript, ES6] 
+image: assets/images/jekyll.png
+beforetoc: "Jekyll é versátil, podendo ser usado para **criar blogs, landing pages, sites institucionais**, entre outros. O conteúdo é criado através de simples arquivos de texto no formato **MarkDown**." 
+toc: true
+comment: true
+---
+
 Jekyll é versátil, podendo ser usado para **criar blogs, landing pages, sites institucionais**, entre outros. O conteúdo é criado através de simples arquivos de texto no formato **MarkDown**.
 
 # Introdução
