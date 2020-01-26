@@ -3,7 +3,7 @@ layout: post
 title:  "Optional Chaining"
 author: klaid
 featured: true
-hidden: false
+hidden: true
 categories: [ JavaScript ]
 tags: [TypeScript, ES6] 
 image: assets/images/jekyll.png
