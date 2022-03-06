@@ -14,7 +14,25 @@ toc: true
 **A principal diferença** entre int.Pase e Convert.ToInt32 é que **passar um valor nulo para int.Parse lancará um ArgumentNullException, enquanto passar valores nulos para o Convert.ToInt32 retornará zero.**
 
 ## O que é int.Parse?
-A finalidade do int.Parse 
+A finalidade do int.Parse é converter uma string em um inteiro.
+```c#
+using System;
+namespace ConvertTo
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int output;
+			string value = "12";
+			output = int.Parse(output);
+			Console.WriteLine(output);
+			Console.ReadLine();
+		}
+	}
+}
+```
+
 ## O que é Convert.ToInt32?
 
 ## Quais as semenhanças entre int.Parse e Convert.Int32 em C#?
