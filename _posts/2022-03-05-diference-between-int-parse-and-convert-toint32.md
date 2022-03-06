@@ -6,7 +6,7 @@ featured: false
 hidden: true
 categories: [.Net]
 tags: [C#, .Net, Cast, Type Conversion, Convert, Parse] 
-image: diference-between-int-parse-and-convert-toint32.png
+image: assets/images/diference-between-int-parse-and-convert-toint32.png
 beforetoc: "" 
 toc: true
 ---
