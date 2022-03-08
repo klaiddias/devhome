@@ -67,6 +67,36 @@ namespace ConvertTo
 ```
 
 Cono já dissemos anteriormente int.Parse ao receber um valor nulo para converter retornará uma exceção do tipo ArgumentNullException, más, e se tentarmos converter um decimal? Ou seja, um número que não seja inteiro.
+
+```c#
+using System;
+namespace ConvertTo
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int output;
+			string value = "1.33";
+			
+			try
+			{
+				output = int.Parse(value);
+			}
+			catch (Exception e)
+			{
+				Console.writeLine(e.ToString());
+			}
+			
+			Console.WriteLine(output.ToString();
+			Console.ReadLine();
+		}
+	}
+}
+
+```
+
+
 ## O que é Convert.ToInt32?
 
 ## Quais as semelhanças entre int.Parse e Convert.Int32 em C#?
