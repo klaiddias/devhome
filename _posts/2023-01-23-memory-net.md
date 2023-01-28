@@ -6,7 +6,7 @@ featured: true
 hidden: false
 categories: [.Net]
 tags: [.Net, .Net Core, Heap, Steck, Memory] 
-image: assets/images/reduce.png
+image: assets/images/dotNet.png
 beforetoc: "" 
 toc: true
 ---
